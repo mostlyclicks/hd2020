@@ -13,10 +13,11 @@ const IndexPage = () => (
     <section id="banner">
       <div className="inner">
         <h1>
-          <a href="https://www.gatsbyjs.org/">Gatsby</a> HTML5Up
+          Welcome to Hulse Dental
         </h1>
+      
         <p>
-          <a href="https://github.com/app-generator/gatsby-html5up-spectral">Open-Source</a> app with Spectral design
+          Onalaska, Wisconsin
         </p>
         <ul className="actions special">
           <li>
@@ -39,16 +40,14 @@ const IndexPage = () => (
       <div className="inner">
         <header className="major">
           <h2>
-            Arcu aliquet vel lobortis ata nisl
-            <br />
-            eget augue amet aliquet nisl cep donec
+            HULSE DENTAL IS ONALASKA'S CHOICE FOR DENTAL CARE, PROVIDING STATE-OF-THE-ART FAMILY DENTISTRY AND COSMETIC DENTISTRY SERVICES BY DENTIST KURT HULSE
           </h2>
+         
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+            We are glad you are taking the time to learn more about us and our dental care and services. Our goal is to make sure that you’re comfortable and receive the best care possible throughout your dental visit. We offer pleasant surroundings with state-of-the-art technology along with other amenities to provide a relaxed yet professional family dental environment to improve and maintain your oral health. From the moment you enter our dental office, you are treated with courtesy and respect in a warm, friendly setting where your comfort is a top priority. We are fortunate to be easily accessible from the Onalaska, La Crosse, Holmen, West Salem and other coulee region areas.
+          </p>
+          <p>
+            Whether you come to our office for a routine check-up, cleaning & dental care, restorative dentistry, dental implants, teeth whitening, cosmetic dentistry, or any other specialty service, we all are focused on providing you with a visit to the dentist that is smooth and pleasant, and that your dental care is designed specifically to meet your unique needs and goals. Our team of professionals is proud of the care they provide and the exceptional service they deliver to our patients and community.
           </p>
         </header>
         <ul className="icons major">
