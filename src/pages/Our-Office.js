@@ -21,7 +21,7 @@ const IndexPage = () => (
       </header>
       <section className="wrapper style5">
         <div className="inner">
-          <h3>Office</h3>
+          <h3>Our Office</h3>
           <ul>
             <li>
               <a href="#hours-directions">Directions</a>

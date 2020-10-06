@@ -20,12 +20,12 @@ const IndexPage = () => (
     </Helmet>
     <article id="main">
       <header>
-        <h2>Solutions</h2>
+        <h2>Services</h2>
         <p>Preventative, Restorative &amp; Orthodontic Services</p>
       </header>
       <section className="wrapper style5">
         <div className="inner">
-          <h3>Solutions</h3>
+          <h3>Services</h3>
 
           <h4>Preventive Services</h4>
           <p>
