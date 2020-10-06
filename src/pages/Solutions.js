@@ -4,6 +4,19 @@ import Layout from '../components/Layout';
 
 const IndexPage = () => (
   <Layout fullMenu>
+    <Helmet
+      title="Preventative, Restorative & Orthodontic Services | Hulse Dental, Onalaska WI"
+      meta={[
+        {
+          name: 'description',
+          content:
+            'Learn about our preventative, restorative & orthodontic services | Hulse Dental, Onalaska WI',
+        },
+        { name: 'keywords', content: 'site, web' },
+      ]}
+    >
+      <html lang="en" />
+    </Helmet>
     <article id="main">
       <header>
         <h2>Solutions</h2>
