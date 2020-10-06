@@ -3,6 +3,7 @@ import config from '../../config';
 export default function Footer() {
   return (
     <footer id="footer">
+    {/*
       <ul className="icons">
         {config.socialLinks.map(social => {
           const { style, icon, name, url } = social;
@@ -15,11 +16,13 @@ export default function Footer() {
           );
         })}
       </ul>
+
+      */}
       <ul className="copyright">
-        <li>&copy; AppSeed</li>
-        <li>
-          Design: <a href="http://html5up.net">HTML5 UP</a>
-        </li>
+        <li>Hulse Dental</li>
+        <li>1840 East Main Street</li>
+        <li>Onalaska, WI 54650</li>
+        <li>(608) 783-1306</li>
       </ul>
     </footer>
   );

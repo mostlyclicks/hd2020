@@ -1,29 +1,42 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
 
-import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
-import pic3 from '../assets/images/pic03.jpg';
-import config from '../../config';
+// import pic1 from '../assets/images/pic01.jpg';
+// import pic2 from '../assets/images/pic02.jpg';
+// import pic3 from '../assets/images/pic03.jpg';
+// import config from '../../config';
 const IndexPage = () => (
   <Layout>
+    <Helmet
+      title="Hulse Dental of Onalaska WI"
+      meta={[
+        {
+          name: 'description',
+          content:
+            'Find out more about Dr. Kurt Hulse of Hulse Dental, Onalaska WI',
+        },
+        {
+          name: 'keywords',
+          content: 'dentist, onalaska Wisconsin dentist, Dr. Kurt Hulse',
+        },
+      ]}
+    >
+      <html lang="en" />
+    </Helmet>
     <section id="banner">
       <div className="inner">
-        <h1>
-          Welcome to Hulse Dental
-        </h1>
-      
-        <p>
-          Onalaska, Wisconsin
-        </p>
+        <h1>Welcome to Hulse Dental</h1>
+
+        <p>Onalaska, Wisconsin</p>
         <ul className="actions special">
           <li>
             <Scroll type="id" element="one">
               <a href="/#" className="button primary">
-                Explore
+                Learn more about Hulse Dental
               </a>
             </Scroll>
           </li>
@@ -40,16 +53,36 @@ const IndexPage = () => (
       <div className="inner">
         <header className="major">
           <h2>
-            HULSE DENTAL IS ONALASKA'S CHOICE FOR DENTAL CARE, PROVIDING STATE-OF-THE-ART FAMILY DENTISTRY AND COSMETIC DENTISTRY SERVICES BY DENTIST KURT HULSE
+            HULSE DENTAL IS ONALASKA'S CHOICE FOR DENTAL CARE, PROVIDING
+            STATE-OF-THE-ART FAMILY DENTISTRY AND COSMETIC DENTISTRY SERVICES BY
+            DENTIST KURT HULSE
           </h2>
-         
+
           <p>
-            We are glad you are taking the time to learn more about us and our dental care and services. Our goal is to make sure that you’re comfortable and receive the best care possible throughout your dental visit. We offer pleasant surroundings with state-of-the-art technology along with other amenities to provide a relaxed yet professional family dental environment to improve and maintain your oral health. From the moment you enter our dental office, you are treated with courtesy and respect in a warm, friendly setting where your comfort is a top priority. We are fortunate to be easily accessible from the Onalaska, La Crosse, Holmen, West Salem and other coulee region areas.
+            We are glad you are taking the time to learn more about us and our
+            dental care and services. Our goal is to make sure that you’re
+            comfortable and receive the best care possible throughout your
+            dental visit. We offer pleasant surroundings with state-of-the-art
+            technology along with other amenities to provide a relaxed yet
+            professional family dental environment to improve and maintain your
+            oral health. From the moment you enter our dental office, you are
+            treated with courtesy and respect in a warm, friendly setting where
+            your comfort is a top priority. We are fortunate to be easily
+            accessible from the Onalaska, La Crosse, Holmen, West Salem and
+            other coulee region areas.
           </p>
           <p>
-            Whether you come to our office for a routine check-up, cleaning & dental care, restorative dentistry, dental implants, teeth whitening, cosmetic dentistry, or any other specialty service, we all are focused on providing you with a visit to the dentist that is smooth and pleasant, and that your dental care is designed specifically to meet your unique needs and goals. Our team of professionals is proud of the care they provide and the exceptional service they deliver to our patients and community.
+            Whether you come to our office for a routine check-up, cleaning &
+            dental care, restorative dentistry, dental implants, teeth
+            whitening, cosmetic dentistry, or any other specialty service, we
+            all are focused on providing you with a visit to the dentist that is
+            smooth and pleasant, and that your dental care is designed
+            specifically to meet your unique needs and goals. Our team of
+            professionals is proud of the care they provide and the exceptional
+            service they deliver to our patients and community.
           </p>
         </header>
+        {/* 
         <ul className="icons major">
           <li>
             <span className="icon fa-gem major style1">
@@ -67,9 +100,11 @@ const IndexPage = () => (
             </span>
           </li>
         </ul>
+        */}
       </div>
     </section>
 
+    {/* 
     <section id="two" className="wrapper alt style2">
       <section className="spotlight">
         <div className="image">
@@ -203,6 +238,7 @@ const IndexPage = () => (
         </ul>
       </div>
     </section>
+    */}
   </Layout>
 );
 
