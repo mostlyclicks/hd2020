@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { Link } from 'gatsby-plugin-modal-routing';
 
 import Layout from '../components/Layout';
 
@@ -27,7 +28,57 @@ const IndexPage = () => (
     >
       <html lang="en" />
     </Helmet>
+
+    {/* 
+    
+    <section
+      id="top-nav"
+      style={{ textAlign: 'center', padding: '.5rem', zIndex: '200000' }}
+    >
+      <small>
+        <Link
+          to="/modal/covid/"
+          asModal
+          style={{
+            color: '#fe9314',
+            fontWeight: 'bold',
+          }}
+        >
+          COVID-19 UPDATE
+        </Link>
+      </small>
+    </section>
+    
+    
+    */}
+
     <section id="banner">
+      <div
+        style={{
+          position: 'absolute',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          top: '0',
+          left: '0',
+          right: '0',
+          width: '200px',
+          padding: '.5rem',
+          zIndex: '100000',
+        }}
+      >
+        <small>
+          <Link
+            to="/modal/covid/"
+            asModal
+            style={{
+              color: '#ffffff',
+              fontWeight: 'bold',
+            }}
+          >
+            COVID-19 UPDATE
+          </Link>
+        </small>
+      </div>
       <div className="inner">
         <h1>Welcome to Hulse Dental</h1>
 

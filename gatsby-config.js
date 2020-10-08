@@ -3,10 +3,10 @@ const config = require('./config');
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
-		title: 'Gatsby Html5up - Open-Source app with Spectral design',
+    title: 'Gatsby Html5up - Open-Source app with Spectral design',
     description: `Open-Source Gatsby Starter`,
     author: `@Sm0keDev`,
-		siteUrl: `https://gatsby-html5up-spectral.appseed.us`,
+    siteUrl: `https://gatsby-html5up-spectral.appseed.us`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -20,6 +20,15 @@ module.exports = {
         theme_color: config.manifestThemeColor,
         display: config.manifestDisplay,
         icon: config.manifestIcon, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-modal-routing`,
+      options: {
+        appElement: '#___gatsby',
+        modalProps: {
+          closeTimeoutMS: 500,
+        },
       },
     },
     'gatsby-plugin-sass',
