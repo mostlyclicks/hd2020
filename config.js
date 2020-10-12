@@ -14,15 +14,15 @@ module.exports = {
   socialLinks: [
     {
       style: 'brands',
-      icon: 'fa-github',
-      name: 'Github',
-      url: 'https://github.com/app-generator/gatsby-html5up-spectral',
+      icon: 'fa-facebook',
+      name: 'Facebook',
+      url: 'https://www.facebook.com/hulsedental',
     },
     {
       style: 'brands',
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/webappseed',
-    }
+      icon: 'fa-instagram',
+      name: 'Instagram',
+      url: 'https://www.instagram.com/hulse_dental/',
+    },
   ],
 };
