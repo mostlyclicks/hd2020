@@ -5,24 +5,31 @@ import Layout from '../components/Layout';
 
 const IndexPage = () => (
   <Layout fullMenu>
-
     <Helmet
-      title="Page not found | Hulse Dental, Onalaska WI"
+      title="Thank you for your payment | Hulse Dental, Onalaska WI"
       meta={[
         {
           name: 'description',
-          content: 'Page not found | Hulse Dental, Onalaska WI',
+          content:
+            'Thank you | Hulse Dental, Onalaska WI',
         },
         { name: 'keywords', content: 'site, web' },
       ]}
-    ></Helmet>
-
-
+    >
+      <html lang="en" />
+    </Helmet>
     <article id="main">
       <header>
-        <h2>Not Found</h2>
-        <p>Not a Valid URL</p>
+        <h2>Thank you</h2>
+        
       </header>
+      <section className="wrapper style5">
+        <div className="inner">
+          <h3>Thank you for your Payment</h3>
+
+          
+        </div>
+      </section>
     </article>
   </Layout>
 );

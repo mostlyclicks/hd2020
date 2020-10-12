@@ -3,7 +3,31 @@ import Helmet from 'react-helmet';
 
 import Layout from '../components/Layout';
 
-const IndexPage = () => (
+export default class IndexPage extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      customerID: ''
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({
+      customerID: event.target.value
+    })
+  }
+
+  handleSubmit(event) {
+    alert('Form was submitted: ' + this.state.value);
+    event.preventDefault();
+  }
+
+render() {
+  return (
   <Layout fullMenu>
     <Helmet
       title="Pay your bill online | Hulse Dental, Onalaska WI"
@@ -71,13 +95,13 @@ const IndexPage = () => (
               type="hidden"
               name="RURL"
               id="RURL"
-              value="https://www.hulsedental.com/thank-you"
+              value="https://www.hulsedental.com/Thank-you"
             />
             <input
               type="hidden"
               name="CURL"
               id="CURL"
-              value="https://www.hulsedental.com/canceled-payment"
+              value="https://www.hulsedental.com/Canceled-payment"
             />
             <input
               type="hidden"
@@ -98,13 +122,14 @@ const IndexPage = () => (
               value="N"
             />
             <input type="hidden" name="PostRspMsg" id="PostRspMsg" value="N" />
-            Account Number:
+            Account Name:
             <input
               type="text"
               required
               name="custrefid"
               id="custrefid"
-              value=""
+              value={this.state.customerID}
+              onChange={this.handleChange}
             />
             <br />
             <input type="Submit" name="Submit" id="Submit" value="Pay Now" />
@@ -113,6 +138,6 @@ const IndexPage = () => (
       </section>
     </article>
   </Layout>
-);
+  )}};
 
-export default IndexPage;
+// export default IndexPage;
