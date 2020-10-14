@@ -30,11 +30,11 @@ export default function Nav({ onMenuToggle = () => {} }) {
               <li>
                 <Link to="/Dr-Kurt-Hulse">About Dr. Kurt Hulse</Link>
               </li>
-              {/* 
+              
               <li>
                 <Link to="/Pay-Your-Bill">Pay Your Bill</Link>
               </li>
-              */}
+            
             </ul>
             <a
               className="close"
