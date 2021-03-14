@@ -2,6 +2,11 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 import Layout from '../components/Layout';
+import NewPatientPageOne from "../assets/pdf/New-Patient-Registration-page-1.pdf"
+import NewPatientPageTwo from "../assets/pdf/New-Patient-Registration-page-2.pdf"
+import MedicalHistory from "../assets/pdf/Medical-History-update.pdf"
+import HIPAA from "../assets/pdf/HIPAA.pdf"
+
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -27,10 +32,10 @@ const IndexPage = () => (
               <a href="#hours-directions">Directions</a>
             </li>
             <li>
-              <a href="../static/pdf/New-Patient-Registration-page-1.pdf">New Patient Forms - Page 1</a>
+              <a href={NewPatientPageOne}>New Patient Forms - Page 1</a>
             </li>
             <li>
-              <a href="../static/pdf/New-Patient-Registration-page-2.pdf">New Patient Forms - Page 2</a>
+              <a href={NewPatientPageTwo}>New Patient Forms - Page 2</a>
             </li>
           </ul>
           <h4>
@@ -173,17 +178,17 @@ const IndexPage = () => (
 
           <ul>
             <li>
-              <a href="../static/pdf/New-Patient-Registration-page-1.pdf">New Patient Forms - Page 1</a>
+              <a href={NewPatientPageOne}>New Patient Forms - Page 1</a>
             </li>
             <li>
-              <a href="../static/pdf/New-Patient-Registration-page-2.pdf">New Patient Forms - Page 2</a>
+              <a href={NewPatientPageTwo}>New Patient Forms - Page 2</a>
             </li>
             <li>
-              <a href="../static/pdf/Medical-History-update.pdf">Medical History</a>
+              <a href={MedicalHistory}>Medical History</a>
             </li>
             
             <li>
-              <a href="../static/pdf/HIPAA.pdf">
+              <a href={HIPAA}>
                 Health Information Consent and Use Form
               </a>
             </li>
