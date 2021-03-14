@@ -27,7 +27,10 @@ const IndexPage = () => (
               <a href="#hours-directions">Directions</a>
             </li>
             <li>
-              <a href="#new-patient-forms">New Patient Forms</a>
+              <a href="../New-Patient-Registration-page-1.pdf">New Patient Forms - Page 1</a>
+            </li>
+            <li>
+              <a href="../New-Patient-Registration-page-2.pdf">New Patient Forms - Page 2</a>
             </li>
           </ul>
           <h4>
@@ -170,15 +173,17 @@ const IndexPage = () => (
 
           <ul>
             <li>
-              <a
-                href="https://hd10.s3.amazonaws.com/Forms/new_patient_form.pdf"
-                target="_blank"
-              >
-                New Patient Form
-              </a>
+              <a href="../New-Patient-Registration-page-1.pdf">New Patient Forms - Page 1</a>
             </li>
             <li>
-              <a href="https://hd10.s3.amazonaws.com/Forms/health_info_consent_form.pdf">
+              <a href="../New-Patient-Registration-page-2.pdf">New Patient Forms - Page 2</a>
+            </li>
+            <li>
+              <a href="../Medical-History-update.pdf">Medical History</a>
+            </li>
+            
+            <li>
+              <a href="../HIPAA.pdf">
                 Health Information Consent and Use Form
               </a>
             </li>
