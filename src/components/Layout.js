@@ -51,6 +51,7 @@ class Layout extends Component {
               ]}
             >
               <html lang="en" />
+              <meta name="google-site-verification" content="y3gVdyWqU_p6C_d-9u7-kh36_LaUeTmiO80Jm-oSLHg" />
             </Helmet>
             <div
               className={
